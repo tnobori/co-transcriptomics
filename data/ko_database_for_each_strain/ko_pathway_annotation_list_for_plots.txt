@@ -1,0 +1,142 @@
+KO
+Amino acid related enzymes \\[BR:ko01007]
+Amino sugar and nucleotide sugar metabolism
+Chaperones and folding catalysts \\[BR:ko03110]
+Chromosome and associated proteins \\[BR:ko03036]
+Citrate cycle \\(TCA cycle)
+DNA repair and recombination proteins \\[BR:ko03400]
+DNA replication
+DNA replication proteins \\[BR:ko03032]
+Exosome \\[BR:ko04147]
+Function unknown
+Glycerophospholipid metabolism
+"Glycine, serine and threonine metabolism"
+Glycolysis 
+Homologous recombination
+Messenger RNA biogenesis \\[BR:ko03019]
+Methane metabolism
+Mismatch repair
+Mitochondrial biogenesis \\[BR:ko03029]
+Monobactam biosynthesis
+Pentose phosphate pathway
+Peptidases \\[BR:ko01002]
+Peptidoglycan biosynthesis and degradation proteins \\[BR:ko01011]
+Phenylalanine metabolism
+"Phenylalanine, tyrosine and tryptophan biosynthesis"
+Purine metabolism
+Pyrimidine metabolism
+Pyruvate metabolism
+Ribosome biogenesis \\[BR:ko03009]
+Transfer RNA biogenesis \\[BR:ko03016]
+Transporters \\[BR:ko02000]
+Tryptophan metabolism
+Carotenoid biosynthesis
+Enzymes with EC numbers
+Exosome \\[BR:ko04147]
+Function unknown
+Galactose metabolism
+Pentose and glucuronate interconversions
+Transcription factors \\[BR:ko03000]
+Transporters \\[BR:ko02000]
+Two\\-component system
+Antimicrobial resistance genes \\[BR:ko01504]
+Carbon fixation pathways in prokaryotes
+Cell cycle \\- Caulobacter
+Chaperones and folding catalysts \\[BR:ko03110]
+Chromosome and associated proteins \\[BR:ko03036]
+Enzymes with EC numbers
+General function prediction only
+Glycosyltransferases \\[BR:ko01003]
+Glyoxylate and dicarboxylate metabolism
+Lipopolysaccharide biosynthesis
+Nicotinate and nicotinamide metabolism
+Oxidative phosphorylation
+Peptidoglycan biosynthesis and degradation proteins \\[BR:ko01011]
+Porphyrin and chlorophyll metabolism
+Purine metabolism
+Ribosome biogenesis \\[BR:ko03009]
+Transfer RNA biogenesis \\[BR:ko03016]
+Transport
+Transporters \\[BR:ko02000]
+Two\\-component system
+Two\\-component system \\[BR:ko02022]
+"Valine, leucine and isoleucine degradation"
+Vancomycin resistance
+Chromosome and associated proteins \\[BR:ko03036]
+DNA repair and recombination proteins \\[BR:ko03400]
+Enzymes with EC numbers
+Function unknown
+Histidine metabolism
+Homologous recombination
+One carbon pool by folate
+Pentose phosphate pathway
+"Phenylalanine, tyrosine and tryptophan biosynthesis"
+Quorum sensing
+Ribosome biogenesis \\[BR:ko03009]
+RNA degradation
+Transcription factors \\[BR:ko03000]
+Transfer RNA biogenesis \\[BR:ko03016]
+Two\\-component system
+Cysteine and methionine metabolism
+DNA repair and recombination proteins \\[BR:ko03400]
+Oxidative phosphorylation
+Purine metabolism
+Synthesis and degradation of ketone bodies
+Transcription factors \\[BR:ko03000]
+Transporters \\[BR:ko02000]
+Two\\-component system
+Two\\-component system \\[BR:ko02022]
+"Valine, leucine and isoleucine degradation"
+DNA repair and recombination proteins \\[BR:ko03400]
+Enzymes with EC numbers
+Histidine metabolism
+Lipopolysaccharide biosynthesis proteins \\[BR:ko01005]
+Lysine biosynthesis
+Mismatch repair
+Mitochondrial biogenesis \\[BR:ko03029]
+Peptidoglycan biosynthesis
+"Phenylalanine, tyrosine and tryptophan biosynthesis"
+Ribosome biogenesis \\[BR:ko03009]
+Secretion system \\[BR:ko02044]
+Thiamine metabolism
+Transcription machinery \\[BR:ko03021]
+Transfer RNA biogenesis \\[BR:ko03016]
+Transport
+Transporters \\[BR:ko02000]
+"Alanine, aspartate and glutamate metabolism"
+Amino acid related enzymes \\[BR:ko01007]
+Aminoacyl\\-tRNA biosynthesis
+Carbon fixation in photosynthetic organisms
+Carbon fixation pathways in prokaryotes
+DNA repair and recombination proteins \\[BR:ko03400]
+Exosome \\[BR:ko04147]
+"Glycine, serine and threonine metabolism"
+Glycolysis 
+Glycosyltransferases \\[BR:ko01003]
+Glyoxylate and dicarboxylate metabolism
+Lipopolysaccharide biosynthesis proteins \\[BR:ko01005]
+Methane metabolism
+Mitochondrial biogenesis \\[BR:ko03029]
+One carbon pool by folate
+Oxidative phosphorylation
+Pentose phosphate pathway
+Peptidases \\[BR:ko01002]
+Protein export
+Purine metabolism
+Pyrimidine metabolism
+Ribosome
+Ribosome \\[BR:ko03011]
+Ribosome biogenesis \\[BR:ko03009]
+Secretion system \\[BR:ko02044]
+Streptomycin biosynthesis
+Transcription machinery \\[BR:ko03021]
+Transfer RNA biogenesis \\[BR:ko03016]
+Translation factors \\[BR:ko03012]
+Transporters \\[BR:ko02000]
+Mitochondrial biogenesis \\[BR:ko03029]
+Oxidative phosphorylation
+Photosynthesis
+Photosynthesis proteins \\[BR:ko00194]
+Ribosome
+Ribosome \\[BR:ko03011]
+Transcription machinery \\[BR:ko03021]
