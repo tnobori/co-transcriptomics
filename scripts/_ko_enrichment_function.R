@@ -71,7 +71,7 @@ ko.enrich.strain <- function(test_ko_list, strain){
   
   #summerize genes involved in significant KOs 
   for (i in c(1:nrow(out_significant))){
-    z <- f_input[f_input[, 4]==out_significant[i, 1], c(1,5)]
+    z <- f_input[f_input[, 4] == out_significant[i, 1], c(1,5)]
     zz <- paste(z[, 1], z[,2], sep = "---")
     g4paste <- paste(zz, collapse = "|")
     out_significant[i, 4] <- g4paste
