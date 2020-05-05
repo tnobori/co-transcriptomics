@@ -14,3 +14,6 @@
 - config file (clustering function may be removed)
 - KO_database_for_each_strain function
 - bac-plant correlation bootstrap analysis
+
+
+## **Work flow**
