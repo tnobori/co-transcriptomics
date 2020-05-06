@@ -7,24 +7,21 @@
 rm(list=ls())
 
 #load config 
-source("/Users/tatsuyanobori/Desktop/MPIPZ/Projects/Bacterial_Transcriptome/A346_commensal_rnaseq_for_paper/scripts/_config.R")
-source("/Users/tatsuyanobori/Desktop/MPIPZ/Projects/Bacterial_Transcriptome/A346_commensal_rnaseq_for_paper/scripts/_ko_plot_function.R")
+source("/scripts/_config.R")
+source("/scripts/_ko_plot_function.R")
 
+#
 strain <- c("Leaf1","Leaf130", "Leaf155","Leaf177", "Leaf187", "Leaf176", "Leaf404", "Root935", "Soil763", "Pto", "D36E", "MM")
 
 #combined file directory 
-dir_data <- "/Users/tatsuyanobori/Desktop/MPIPZ/Projects/Bacterial_Transcriptome/A346_commensal_rnaseq_for_paper/ko_enrichment/enrichment_tables/"
+dir_database <- "/data/ko_database_for_each_strain/"
+out_dir <- "/output/directory/"
 
-out_dir <- "/Users/tatsuyanobori/Desktop/MPIPZ/Projects/Bacterial_Transcriptome/A346_commensal_rnaseq_for_paper/ko_enrichment/expression_boxplot/"
-
-
-dir_database <- "/Users/tatsuyanobori/Desktop/MPIPZ/Projects/Bacterial_Transcriptome/A344_commensal_KO_enrichment_analysis/database/"
-ko_database <- read.delim(file = paste(dir_database, "class-pathway-ko-description.txt", sep = ""),  header = F)
-
-
+#loading the KO database
+ko_database <- read.delim(file = paste(dir_database, "_KO_master_database.txt", sep = ""),  header = F)
 
 #search for KO pathway annotations
-infile <- read.delim(file = paste(dir_data, "ko_pathway_annotation_list_for_plots.txt", sep = ""),  header = T)
+infile <- read.delim(file = paste(dir_database, "ko_pathway_annotation_list_for_plots.txt", sep = ""),  header = T)
 ko2 <- infile[, 1] %>% unique()
 
 for (i in c(1:length(ko2))) {
