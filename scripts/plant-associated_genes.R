@@ -1,3 +1,11 @@
+#This script is for Fig. 3B and Fig. 4 in Nobori et al., 2020, bioRxiv
+#For each commensal strain, expression fold changes (vs in vitro) of plant-associated (PA) genes or non-PA genes are plotted (Fig. 3B).
+#Statistical tests are performed for the enrichment of genes that are both PA and up-regulated or nonPA and down-regulated (Fig. 3B).
+#KEGG enrichment analysis is performed for genes that are PA/nonPA and up/down-regulated (used for Fig. 4).
+
+#created by Tatsuya Nobori
+#tnobori@salk.edu
+
 rm(list=ls())
 
 #load config 
@@ -37,7 +45,7 @@ out_dir3 <- "/Users/tatsuyanobori/Desktop/MPIPZ/Projects/Bacterial_Transcriptome
 
 
 
-
+#for loop for each strain
 for (i in c(1:length(strain))){
 
   data <- read.delim(paste(dir_data, "A346_rnaseq_summary_", strain[i], ".txt", sep = "" ), header = T, row.names = 1)
