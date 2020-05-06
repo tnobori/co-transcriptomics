@@ -1,3 +1,8 @@
+#This script is to generate the correlation heatmap in Fig. 6 of Nobori et al., 2020, bioRxiv.
+
+#created by Tatsuya Nobori
+#tnobori@salk.edu
+
 rm(list=ls())
 
 #load config 
