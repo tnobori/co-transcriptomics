@@ -1,3 +1,9 @@
+#This script is for generating boxplots of commensal genes with various functional (KEGG) annotations
+#shown in Fig. 2, 4, S5, S6, S9, S10, S11, and S12 in Nobori et al., 2020, bioRxiv
+
+#created by Tatsuya Nobori
+#tnobori@salk.edu
+
 rm(list=ls())
 
 #load config 
