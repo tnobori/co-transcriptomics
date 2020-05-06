@@ -5,10 +5,7 @@
 
 
 #loading the config file 
-source("/Users/tatsuyanobori/Desktop/MPIPZ/Projects/Bacterial_Transcriptome/A346_commensal_rnaseq_for_paper/scripts/_config.R")
-
-####test data
-test_ko_list <- read.delim("/Users/tatsuyanobori/Desktop/MPIPZ/Projects/Bacterial_Transcriptome/A344_commensal_KO_enrichment_analysis/test_ko_list/test_ko_list.txt",  header = T)
+source("/scripts/_config.R")
 
 #========#========#========#========#========#========#========#========#========#========#========
 #ko enrichment function
@@ -18,7 +15,7 @@ test_ko_list <- read.delim("/Users/tatsuyanobori/Desktop/MPIPZ/Projects/Bacteria
 ko.enrich.strain <- function(test_ko_list, strain){
   
   #loading a KO database for the target strain
-  dir <- "/Users/tatsuyanobori/Desktop/MPIPZ/Projects/Bacterial_Transcriptome/A346_commensal_rnaseq_for_paper/ko_database/"
+  dir <- "/data/ko_database_for_each_strain/"
   ko_data <- read.delim(file = paste(dir, "KO_database_", strain,".txt", sep = ""),  header = T)
   
   f3 <- unique(ko_data[, 4]) %>% as.character() #all KO terms in the category 3
