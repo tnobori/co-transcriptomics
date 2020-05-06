@@ -1,4 +1,6 @@
-# Nobori_commensal_co-transcriptome_2020
+# Co-transcriptome analysis of plants and commensal bacteria
+## **Nobori et al., 2020, bioRxiv**
+
 # Under construction.....
 
 ## **Data availability**
