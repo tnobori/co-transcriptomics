@@ -5,7 +5,7 @@
 #tnobori@salk.edu
 
 #load config files
-source("/Users/tatsuyanobori/Desktop/MPIPZ/Projects/Bacterial_Transcriptome/A346_commensal_rnaseq_for_paper/scripts/_config.R")
+source("/scripts/_config.R")
 
 #test data
 target <- c("K10439", "K10440", "K10441")
@@ -14,13 +14,13 @@ target <- c("K10439", "K10440", "K10441")
 ko.plot <- function(target){
   target <- unique(target)
   
-  dir_data <- "/Users/tatsuyanobori/Desktop/MPIPZ/Projects/Bacterial_Transcriptome/A346_commensal_rnaseq_for_paper/rnaseq_summary_each_strain/"
-  dir_database <- "/Users/tatsuyanobori/Desktop/MPIPZ/Projects/Bacterial_Transcriptome/A344_commensal_KO_enrichment_analysis/database/"
+  dir_data <- "/data/normalized_bacterial_RNA-seq_data/"
+  dir_database <- "/data/ko_database_for_each_strain/"
   
   strain2 <- c("Leaf1","Soil763","Leaf130", "Leaf155","Leaf177", "Leaf187", "Leaf176", "Leaf404", "Root935",   "D36E", "MM", "Pto"  )
   strain <- c("D36E", "Leaf1", "Leaf130", "Leaf155", "Leaf176", "Leaf177", "Leaf187", "Leaf404", "MM", "Pto", "Root935", "Soil763")
 
-  ko_database <- read.delim(file = paste(dir_database, "class-pathway-ko-description.txt", sep = ""),  header = F)
+  ko_database <- read.delim(file = paste(dir_database, "_KO_master_database.txt", sep = ""),  header = F)
   
   out_fc <- data.frame(matrix(vector(), 0, length(strain),
                        dimnames = list(c(), strain)),
@@ -82,7 +82,7 @@ ko.plot <- function(target){
   
   
   #making strain-color list
-  commensal <- read.delim(file = "/Users/tatsuyanobori/Desktop/MPIPZ/Projects/Bacterial_Transcriptome/A338_plant_RNA-seq_ALL_combined/commensal_strains.txt",  header = F, row.names = 1)
+  commensal <- read.delim(file = "/data/commensal_annotation_files/commensal_phylogeny.txt",  header = F, row.names = 1)
   strains <- c("Leaf404", "Leaf130", "Leaf155", "Leaf177", "Root935" ,"Leaf176", "Leaf187","Leaf1","Soil763", "Pto", "D36E","MM") %>% as.data.frame()
   rownames(strains) <- strains[,1]
   strains[c(11:12), 1] <- "Pto"
