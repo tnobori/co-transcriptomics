@@ -1,4 +1,8 @@
-#rm(list=ls())
+#ko.plot() is a function for generating boxplots showing expression fold changes of 
+#commensal genes annotated with a given set of KOs.
+
+#created by Tatsuya Nobori
+#tnobori@salk.edu
 
 #load config files
 source("/Users/tatsuyanobori/Desktop/MPIPZ/Projects/Bacterial_Transcriptome/A346_commensal_rnaseq_for_paper/scripts/_config.R")
