@@ -1,3 +1,7 @@
+# ko.enrich.strain() is a function for performing KEGG enrichment analysis on a given set of KEGG ontologies. 
+
+#created by Tatsuya Nobori
+#tnobori@salk.edu
 
 
 #loading the config file 
