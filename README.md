@@ -13,11 +13,11 @@ For each commensal strain, expression fold changes (vs in vitro) of plant-associ
 This script is to generate the correlation heatmap in Fig. 6.
 
 ## **Data**
-**[bacterial_genome_files, bacterial_gff_files](bacterial_genome_files, bacterial_gff_files)**\
+**[bacterial_genome_files](bacterial_genome_files), [bacterial_gff_files](bacterial_gff_files)**\
 The data were used for mapping/counting RNA-seq reads\ 
 Obtained from:\
-https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA297956\
-https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA297942\
+https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA297956 \
+https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA297942 \
 https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA298127
 
 **[commensal_annotation_files](commensal_annotation_files)**\
