@@ -6,7 +6,7 @@
 rm(list=ls())
 
 #load config 
-source("/Users/tatsuyanobori/Desktop/MPIPZ/Projects/Bacterial_Transcriptome/A346_commensal_rnaseq_for_paper/scripts/_config.R")
+source("/scripts/_config.R")
 
 #=========#=========#=========#=========#=========#=========#=========#=========
 #=========#=========#=========#=========#=========#=========#=========#=========
@@ -15,18 +15,16 @@ strains <- c("Leaf404", "Leaf130", "Leaf155", "Leaf177", "Root935" ,"Leaf176", "
 #=========#=========#=========#=========#=========#=========#=========#=========
 #=========#=========#=========#=========#=========#=========#=========#=========
 
-dir_data <- "/Users/tatsuyanobori/Desktop/MPIPZ/Projects/Bacterial_Transcriptome/A310_psl_commensal_rnaseq_analysis/A310_OG_analysis_3/A310_OG_combined/"
-out_dir <- "/Users/tatsuyanobori/Desktop/MPIPZ/Projects/Bacterial_Transcriptome/A347_commensal_PLANT_rnaseq/out/"
+dir_data <- "/data/processed_data/"
+out_dir <- "/output/directory/"
 
 # bacterial OG expression file
-bac <- read.delim(paste(dir_data, "A310_tmm_OG-KO_FC_strain_combined.txt", sep = "" ), header = T, row.names = 1)
+bac <- read.delim(paste(dir_data, "bacteria_RNA-seq_combined.txt", sep = "" ), header = T, row.names = 1)
 bac <- bac[, -c(10:13)]
 bac2 <- na.omit(bac)
 
 #plant RNA-seq data; genes that are DEG at least in one of the strains
-path_plant <- "/Users/tatsuyanobori/Desktop/MPIPZ/Projects/Bacterial_Transcriptome/A347_commensal_PLANT_rnaseq/out/A347_fitted_mean_ave1_DEG_atleast_one_strain.txt"
-plant <- read.delim(path_plant, header = T, row.names = 1)
-
+plant <- read.delim(paste(dir_data, "plant_RNA-seq_fitted_mean_DEG_atleast_one_strain.txt", sep = "" ), header = T, row.names = 1)
 
 a <- grep("mock", colnames(plant)) #mock
 plant2 <- sweep(plant, 2, plant[, a]) #fold changes 
@@ -102,5 +100,5 @@ for (i in c(1:nrow(out))){
   }
 }
 
-write.table(out_integrated, file=paste(out_dir, "A310_plantDEG_bac_corr_bootstrap.txt", sep = ""), row.names=T, col.names=NA, sep="\t", quote=F)
+write.table(out_integrated, file=paste(out_dir, "plantDEG_bac_correlation.txt", sep = ""), row.names=T, col.names=NA, sep="\t", quote=F)
 

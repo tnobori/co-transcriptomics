@@ -9,13 +9,13 @@
 rm(list=ls())
 
 #load config 
-source("/Users/tatsuyanobori/Desktop/MPIPZ/Projects/Bacterial_Transcriptome/A346_commensal_rnaseq_for_paper/scripts/_config.R")
-source("/Users/tatsuyanobori/Desktop/MPIPZ/Projects/Bacterial_Transcriptome/A346_commensal_rnaseq_for_paper/scripts/_KO_enrichment_function.R")
-source("/Users/tatsuyanobori/Desktop/MPIPZ/Projects/Bacterial_Transcriptome/A346_commensal_rnaseq_for_paper/scripts/_ko_plot_function.R")
+source("/scripts/_config.R")
+source("/scripts/_ko_enrichment_function.R")
+source("/scripts/_ko_plot_function.R")
 ##
 
 
-####plot
+#plot options
 optns <- theme(
   axis.text.x = element_text(margin = margin(c(20, 0, 0, 0)), size = 60, face = "bold", family = "Helvetica", angle = 0, hjust = .5, vjust = .5 ),
   axis.text.y = element_text(margin = margin(c(0, 20, 0, 0)) ,size = 60, face = "bold", family = "Helvetica"), 
@@ -30,20 +30,15 @@ optns <- theme(
   legend.key = element_rect(fill = NA , size= .1)
 ) 
 
-####
-
+#list of strains and phylogenetic information
 strain <- c("Leaf1","Leaf130", "Leaf155","Leaf177", "Leaf187", "Leaf176", "Leaf404", "Root935", "Soil763", "Pto",  "D36E")
 phyla <- c("Actinobacteria1", "Pseudomonas","Alphaproteobacteria","Burkholderiales","Bacillales"
            ,"Bacteroidetes","Bacteroidetes","Bacteroidetes","Actinobacteria1" , "Pseudomonas", "Pseudomonas")
 
 
 #combined file directory 
-dir_data <- "/Users/tatsuyanobori/Desktop/MPIPZ/Projects/Bacterial_Transcriptome/A346_commensal_rnaseq_for_paper/rnaseq_summary_each_strain/"
-out_dir <- "/Users/tatsuyanobori/Desktop/MPIPZ/Projects/Bacterial_Transcriptome/A346_commensal_rnaseq_for_paper/PA_DEG/expression_with_PA/"
-out_dir2 <- "/Users/tatsuyanobori/Desktop/MPIPZ/Projects/Bacterial_Transcriptome/A346_commensal_rnaseq_for_paper/PA_DEG/box_plot/"
-out_dir3 <- "/Users/tatsuyanobori/Desktop/MPIPZ/Projects/Bacterial_Transcriptome/A346_commensal_rnaseq_for_paper/PA_DEG/ko_enrich/"
-
-
+dir_data <- "/data/rnaseq_summary_each_strain/normalized_bacterial_RNA-seq_data/"
+out_dir <- "/output/directory/"
 
 #for loop for each strain
 for (i in c(1:length(strain))){
@@ -52,7 +47,7 @@ for (i in c(1:length(strain))){
   
   #====PA gene data (Levy et al 2017)
   
-  genome_dir <- "/Users/tatsuyanobori/Desktop/MPIPZ/Projects/Bacterial_Transcriptome/A310_psl_commensal_rnaseq_analysis/Levy_etal_data/"
+  genome_dir <- "/data/plant-associated_genes/"
   
   pa_threshold = 1 #significant in at least one statistical test
   
@@ -72,7 +67,7 @@ for (i in c(1:length(strain))){
   
   data_for_save <- data[, c(5,6,7,1,2,3,4,8)]
   
-  write.table(data_for_save, file=paste(out_dir, "A346_gene_expression_withPA_", strain[i] , ".txt", sep = ""), row.names=T, col.names=NA,sep="\t", quote=F)
+  write.table(data_for_save, file=paste(out_dir, "gene_expression_withPA_", strain[i] , ".txt", sep = ""), row.names=T, col.names=NA,sep="\t", quote=F)
   
   #=============#=============#=============#=============#=============#=============
   ###link PA and gene regulation
@@ -111,7 +106,7 @@ for (i in c(1:length(strain))){
                         binwidth = .1 , alpha = 1, dotsize = 1,  fill = c3, color = NA)+ 
     xlab("") + ylab("")+ theme(legend.position = "none") 
   
-  ggsave(paste(out_dir2, "Expression_boxplot_PA_DEG_", strain[i],".png"),  height = 10, width = 10, q)
+  ggsave(paste(out_dir, "Expression_boxplot_PA_DEG_", strain[i],".png"),  height = 10, width = 10, q)
   
   
   #####KO enrichment analysis for genes that are PA/nonPA and up/down-regulated#####
@@ -136,7 +131,7 @@ for (i in c(1:length(strain))){
   }
   out <- out[-1, ]
   
-  write.table(out, file=paste(out_dir3, "A346_PA_DEG_",  strain[i] ,"_KOenrich.txt", sep = ""), row.names=F,  sep="\t", quote=F)
+  write.table(out, file=paste(out_dir, "A346_PA_DEG_",  strain[i] ,"_KOenrich.txt", sep = ""), row.names=F,  sep="\t", quote=F)
   
   
   ######hypergeometric test#####
