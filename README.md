@@ -1,5 +1,5 @@
 # Co-transcriptome analysis of plants and commensal bacteria
-This repository contains some key data and scripts used in Nobori et al., 2020, bioRxiv.
+This repository contains some key data and scripts used in Nobori et al., 2021, bioRxiv.
 
 ## **Scripts**
 **[drawing_ko_expression_plots.R](scripts/drawing_ko_expression_plots.R)**\
