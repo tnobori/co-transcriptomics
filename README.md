@@ -21,7 +21,7 @@ https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA297942 \
 https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA298127
 
 **[RNA-seq count files](data/count_files/)**\
-Raw count files. 
+Raw count files. To integrate bacterial transcriptome data, the genes of each strain should be annotated with orthologous groups and/or KEGG orthology available [here](data/commensal_annotation_files/).
 
 **[commensal_annotation_files](data/commensal_annotation_files/)**\
 The files summarize gene IDs, Orthologous Groups (OGs), KEGG Orthology (KOs).
