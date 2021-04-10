@@ -20,6 +20,9 @@ https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA297956 \
 https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA297942 \
 https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA298127
 
+**[RNA-seq count files](count_files)**\
+
+
 **[commensal_annotation_files](commensal_annotation_files)**\
 The files summarize gene IDs, Orthologous Groups (OGs), KEGG Orthology (KOs).
 
