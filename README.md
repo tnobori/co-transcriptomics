@@ -27,7 +27,7 @@ Raw count files. To integrate bacterial transcriptome data, the genes of each st
 The files summarize gene IDs, Orthologous Groups (OGs), KEGG Orthology (KOs).
 
 **[normalized_bacterial_RNA-seq_data](data/normalized_bacterial_RNA-seq_data/)**\
-Normalized RNA-seq data for each strain with differentially expressed gene (DEG) information.
+Normalized RNA-seq data for each strain with differentially expressed gene (DEG) information. Data of different bacterial strains can be integrated using OGs (an integrated data is in [processed_data](data/processed_data/)).
 
 **[ko_database_for_each_strain](data/ko_database_for_each_strain/)**\
 KEGG annotations for the genome of each strain.
