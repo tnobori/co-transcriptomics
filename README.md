@@ -14,7 +14,7 @@ This script is to generate the correlation heatmap in Fig. 6.
 
 ## **Data**
 **[bacterial_genome_files](data/bacterial_genome_files/), [bacterial_gff_files](data/bacterial_gff_files/)**\
-The data were used for mapping and counting RNA-seq reads\ 
+The data were used for mapping and counting RNA-seq reads\
 Obtained from:\
 https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA297956 \
 https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA297942 \
