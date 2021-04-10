@@ -30,7 +30,7 @@ The files summarize gene IDs, Orthologous Groups (OGs), KEGG Orthology (KOs).
 Normalized RNA-seq data for each strain with differentially expressed gene (DEG) information. Data of different bacterial strains can be integrated using OGs (an integrated data is in [processed_data](data/processed_data/)).
 
 **[ko_database_for_each_strain](data/ko_database_for_each_strain/)**\
-KEGG annotations for the genome of each strain.
+KEGG annotations for the genome of each strain. These data are used for KO enrichment analyses.
 
 **[plant-associated_genes](data/plant-associated_genes/)**\
 Statistical summaries of a comparative genomics study for plant-associated genes (obtained from Levy et al., 2017, Nature Genetics).
