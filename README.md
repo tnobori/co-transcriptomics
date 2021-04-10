@@ -13,7 +13,7 @@ For each commensal strain, expression fold changes (vs in vitro) of plant-associ
 This script is to generate the correlation heatmap in Fig. 6.
 
 ## **Data**
-**[bacterial_genome_files](data/bacterial_genome_files), [bacterial_gff_files](data/bacterial_gff_files)**\
+**[bacterial_genome_files](data/bacterial_genome_files/), [bacterial_gff_files](data/bacterial_gff_files/)**\
 The data were used for mapping/counting RNA-seq reads\ 
 Obtained from:\
 https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA297956 \
@@ -23,19 +23,19 @@ https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA298127
 **[RNA-seq count files](data/count_files/)**\
 Raw count files. 
 
-**[commensal_annotation_files](data/commensal_annotation_files)**\
+**[commensal_annotation_files](data/commensal_annotation_files/)**\
 The files summarize gene IDs, Orthologous Groups (OGs), KEGG Orthology (KOs).
 
-**[normalized_bacterial_RNA-seq_data](data/normalized_bacterial_RNA-seq_data)**\
+**[normalized_bacterial_RNA-seq_data](data/normalized_bacterial_RNA-seq_data/)**\
 Normalized RNA-seq data for each strain with differentially expressed gene (DEG) information.
 
-**[ko_database_for_each_strain](data/ko_database_for_each_strain)**\
+**[ko_database_for_each_strain](data/ko_database_for_each_strain/)**\
 KEGG annotations for the genome of each strain.
 
-**[plant-associated_genes](data/plant-associated_genes)**\
+**[plant-associated_genes](data/plant-associated_genes/)**\
 Statistical summaries of a comparative genomics study for plant-associated genes (obtained from Levy et al., 2017, Nature Genetics).
 
-**[processed_data](data/processed_data)**\
+**[processed_data](data/processed_data/)**\
 bacteria_RNA-seq_combined.txt: bacterial RNA-seq data combined using OGs.\
 plant_RNA-seq_fitted_mean_DEG_atleast_one_strain.txt: expression of plant genes that are DEG in at least one condition\
 These data were used for the analysis in Fig. 6C.
